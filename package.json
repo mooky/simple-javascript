@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch \"npm run build\" src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooky/simple-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mooky/simple-javascript/issues"
+  },
+  "homepage": "https://github.com/mooky/simple-javascript#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-latest": "^6.24.0",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  }
+}
